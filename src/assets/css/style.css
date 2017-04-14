@@ -1,0 +1,100 @@
+/*navbar*/
+.nav-title{
+	line-height: 88px;
+}
+.nav-btn{
+	display: block;
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	background-color: transparent;
+	top:8px;
+}
+.nav-btn span{
+	font-size:45px;
+	line-height: 1.5
+}
+.nav-btn.nav-right-btn{
+	right: 15px;
+}
+.nav-btn.nav-left-btn{
+	left: 15px;
+}
+
+.popup{
+	opacity: 0;
+	display: none;
+	transition: all 250ms ease-in-out;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 2px solid #000;
+}
+
+.popup.show{
+	display: block;
+	opacity: 1;
+}
+
+.popup-content{
+	width: 100%;
+	padding:10px;
+}
+
+.popup-title{
+	margin: 10px auto;
+	font-size:34px;
+	font-weight: bold;
+}
+
+.popup-input{
+	position: relative;
+	margin: 10px auto;
+	width: 90%;
+}
+.popup-input input, .popup-input select, .popup-input textarea{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	font-size: 26px;
+	padding: 5px 15px;
+}
+
+.popup-input input, .popup-input select{
+	height: 75px;
+	line-height: 65px;
+
+}
+.popup-input textarea{
+	min-height: 250px;
+	max-height: 250px;
+	overflow-y: scroll;
+}
+.popup-action{
+	position: absolute;
+	left:5%;
+	bottom:30px;
+	width: 90%;
+	margin: 10px auto;
+	display: flex;
+}
+
+.popup-action button{
+	width: 45%;
+	height: 72px;
+	margin-left:2.5%;
+	margin-right: 2.5%;
+	font-size: 34px;
+	border-radius: 8px;
+}
+
+.popup-action button.popup-submit{
+	background-color: #42b983;
+	color: #fff;
+}
+.popup-action button.popup-cancel{
+	background-color: #e2e2e2
+}

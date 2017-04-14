@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>vue-app</title>
+    
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!--  <script type="text/javascript">(function(doc, win) {var docEl = doc.documentElement,isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,dpr = window.top === window.self ? dpr : 1,resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';docEl.dataset.dpr = dpr;var recalc = function() {var width = docEl.clientWidth;if (width / dpr > 375) {width = 375 * dpr;}docEl.dataset.width = width;docEl.dataset.percent =  (width / 375);docEl.style.fontSize =  10*(width / 375) + 'px';};recalc();if (!doc.addEventListener) return;win.addEventListener(resizeEvt, recalc, false);})(document, window);</script> -->
+
+    <script async type="text/javascript" >
+      if(document.documentElement.clientWidth <= 768){
+        (function(doc, win) {
+        
+          var docEl = doc.documentElement,
+              resizee = 'orientationchange' in window ? 'orientationchange' : 'resize',
+              recalc = function() {
+                  var clientWidth = docEl.clientWidth;
+                  if (!clientWidth) return;
+                docEl.style.fontSize = 12*(clientWidth / 750) + 'px';
+              };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizee, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+       }
+    </script>
+  
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
